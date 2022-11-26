@@ -37,6 +37,7 @@ app.get('/', async function(req, res) {
 
     res.set('Content-Type', 'image/jpeg');
     res.set('Content-Length', imageData.length);
+    res.set('Cache-control', `public, max-age=10`)
     res.send(imageData);
 });
 

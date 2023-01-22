@@ -1,0 +1,8 @@
+version: '3'
+services:
+
+  portainer:
+    image: akashdeep000/htmltoimg
+    container_name: htmltoimg
+    privileged: true
+    restart: unless-stopped
